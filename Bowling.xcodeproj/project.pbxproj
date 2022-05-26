@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E9C3B82283FB79700393DEE /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B81283FB79700393DEE /* InputView.swift */; };
 		2E9C3B8A283FB80700393DEE /* BowlingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B89283FB80700393DEE /* BowlingTest.swift */; };
+		2E9C3B91283FB84A00393DEE /* PlayerNameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B90283FB84A00393DEE /* PlayerNameTest.swift */; };
 		C7640416274F2F5100A223B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		2E9C3B81283FB79700393DEE /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		2E9C3B87283FB80700393DEE /* BowlingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9C3B89283FB80700393DEE /* BowlingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingTest.swift; sourceTree = "<group>"; };
+		2E9C3B90283FB84A00393DEE /* PlayerNameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNameTest.swift; sourceTree = "<group>"; };
 		C7640412274F2F5100A223B5 /* Bowling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bowling; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7640415274F2F5100A223B5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				2E9C3B89283FB80700393DEE /* BowlingTest.swift */,
+				2E9C3B90283FB84A00393DEE /* PlayerNameTest.swift */,
 			);
 			path = BowlingTest;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E9C3B8A283FB80700393DEE /* BowlingTest.swift in Sources */,
+				2E9C3B91283FB84A00393DEE /* PlayerNameTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
