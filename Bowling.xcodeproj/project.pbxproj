@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E9C3B82283FB79700393DEE /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B81283FB79700393DEE /* InputView.swift */; };
+		2E9C3B8A283FB80700393DEE /* BowlingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B89283FB80700393DEE /* BowlingTest.swift */; };
 		C7640416274F2F5100A223B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,11 +26,20 @@
 
 /* Begin PBXFileReference section */
 		2E9C3B81283FB79700393DEE /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		2E9C3B87283FB80700393DEE /* BowlingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E9C3B89283FB80700393DEE /* BowlingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingTest.swift; sourceTree = "<group>"; };
 		C7640412274F2F5100A223B5 /* Bowling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bowling; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7640415274F2F5100A223B5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2E9C3B84283FB80700393DEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C764040F274F2F5100A223B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +58,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2E9C3B88283FB80700393DEE /* BowlingTest */ = {
+			isa = PBXGroup;
+			children = (
+				2E9C3B89283FB80700393DEE /* BowlingTest.swift */,
+			);
+			path = BowlingTest;
+			sourceTree = "<group>";
+		};
 		C7640409274F2F5100A223B5 = {
 			isa = PBXGroup;
 			children = (
 				C7640414274F2F5100A223B5 /* Bowling */,
+				2E9C3B88283FB80700393DEE /* BowlingTest */,
 				C7640413274F2F5100A223B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C7640412274F2F5100A223B5 /* Bowling */,
+				2E9C3B87283FB80700393DEE /* BowlingTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +96,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2E9C3B86283FB80700393DEE /* BowlingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9C3B8B283FB80700393DEE /* Build configuration list for PBXNativeTarget "BowlingTest" */;
+			buildPhases = (
+				2E9C3B83283FB80700393DEE /* Sources */,
+				2E9C3B84283FB80700393DEE /* Frameworks */,
+				2E9C3B85283FB80700393DEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BowlingTest;
+			productName = BowlingTest;
+			productReference = 2E9C3B87283FB80700393DEE /* BowlingTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C7640411274F2F5100A223B5 /* Bowling */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7640419274F2F5100A223B5 /* Build configuration list for PBXNativeTarget "Bowling" */;
@@ -100,9 +137,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					2E9C3B86283FB80700393DEE = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					C7640411274F2F5100A223B5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -122,11 +162,30 @@
 			projectRoot = "";
 			targets = (
 				C7640411274F2F5100A223B5 /* Bowling */,
+				2E9C3B86283FB80700393DEE /* BowlingTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2E9C3B85283FB80700393DEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2E9C3B83283FB80700393DEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9C3B8A283FB80700393DEE /* BowlingTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C764040E274F2F5100A223B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +198,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2E9C3B8C283FB80700393DEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G49TCMH6D2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roadtos7.ios.BowlingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2E9C3B8D283FB80700393DEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G49TCMH6D2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.roadtos7.ios.BowlingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		C7640417274F2F5100A223B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -277,6 +368,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2E9C3B8B283FB80700393DEE /* Build configuration list for PBXNativeTarget "BowlingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9C3B8C283FB80700393DEE /* Debug */,
+				2E9C3B8D283FB80700393DEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C764040D274F2F5100A223B5 /* Build configuration list for PBXProject "Bowling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
