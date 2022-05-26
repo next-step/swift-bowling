@@ -12,7 +12,7 @@ struct PlayerName {
     let value: String
     
     init?(_ value: String) {
-        if value.count > letterCount {
+        if value.count > letterCount || value.contains(" ") {
             return nil
         }
         self.value = value
