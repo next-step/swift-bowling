@@ -9,10 +9,11 @@ import Foundation
 
 struct PlayerName {
     private let letterCount = 3
+    private let blank = " "
     let value: String
     
     init?(_ value: String) {
-        if value.count > letterCount || value.contains(" ") {
+        if value.count > letterCount || value.contains(blank) {
             return nil
         }
         self.value = value
