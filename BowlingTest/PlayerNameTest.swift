@@ -6,10 +6,11 @@
 //
 
 import XCTest
+@testable import Bowling
 
 class PlayerNameTest: XCTestCase {
 
-    func test_PlayerName은_알파벳3글자여야한다_아니면_nil을_반환한다() {
+    func test_PlayerName은_알파벳3글자보다_많으면_nil을_반환한다() {
         XCTAssertNil(PlayerName("abcd"))
     }
 }
