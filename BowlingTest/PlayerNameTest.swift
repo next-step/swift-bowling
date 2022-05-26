@@ -17,5 +17,9 @@ class PlayerNameTest: XCTestCase {
     func test_PlayerName으로_공백이입력되면_nil을_반환한다() {
         XCTAssertNil(PlayerName(" "))
     }
+    
+    func test_PlayerName으로_알파벳이아닌것이입력되면_nil을_반환한다() {
+        XCTAssertNil(PlayerName("가ab"))
+    }
 }
 
