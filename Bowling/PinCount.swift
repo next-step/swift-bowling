@@ -1,5 +1,5 @@
 //
-//  BowlingPinCount.swift
+//  PinCount.swift
 //  Bowling
 //
 //  Created by nylah.j on 2022/05/27.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BowlingPinCount {
+struct PinCount {
     private let zero = 0
     let value: Int
     
