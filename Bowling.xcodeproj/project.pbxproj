@@ -12,6 +12,8 @@
 		2E2F9A9A2840CA8B00D0F0C2 /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F9A962840CA1B00D0F0C2 /* String + Extension.swift */; };
 		2E2F9A9D2840CC8600D0F0C2 /* PlayerNameParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F9A9C2840CC8600D0F0C2 /* PlayerNameParser.swift */; };
 		2E2F9AA128410F7D00D0F0C2 /* BowlingPinCountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F9AA028410F7D00D0F0C2 /* BowlingPinCountTest.swift */; };
+		2E2F9AA32841111300D0F0C2 /* BowlingPinCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F9AA22841111300D0F0C2 /* BowlingPinCount.swift */; };
+		2E2F9AA42841111300D0F0C2 /* BowlingPinCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2F9AA22841111300D0F0C2 /* BowlingPinCount.swift */; };
 		2E9C3B82283FB79700393DEE /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B81283FB79700393DEE /* InputView.swift */; };
 		2E9C3B8A283FB80700393DEE /* BowlingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B89283FB80700393DEE /* BowlingTest.swift */; };
 		2E9C3B91283FB84A00393DEE /* PlayerNameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B90283FB84A00393DEE /* PlayerNameTest.swift */; };
@@ -37,6 +39,7 @@
 		2E2F9A982840CA6900D0F0C2 /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		2E2F9A9C2840CC8600D0F0C2 /* PlayerNameParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerNameParser.swift; sourceTree = "<group>"; };
 		2E2F9AA028410F7D00D0F0C2 /* BowlingPinCountTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingPinCountTest.swift; sourceTree = "<group>"; };
+		2E2F9AA22841111300D0F0C2 /* BowlingPinCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingPinCount.swift; sourceTree = "<group>"; };
 		2E9C3B81283FB79700393DEE /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		2E9C3B87283FB80700393DEE /* BowlingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E9C3B89283FB80700393DEE /* BowlingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingTest.swift; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 				2E9C3B80283FB78D00393DEE /* View */,
 				C7640415274F2F5100A223B5 /* main.swift */,
 				2E9C3B92283FB8E000393DEE /* PlayerName.swift */,
+				2E2F9AA22841111300D0F0C2 /* BowlingPinCount.swift */,
 			);
 			path = Bowling;
 			sourceTree = "<group>";
@@ -219,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E2F9A992840CA6900D0F0C2 /* StringExtensionTest.swift in Sources */,
+				2E2F9AA42841111300D0F0C2 /* BowlingPinCount.swift in Sources */,
 				2E9C3B94283FB90300393DEE /* PlayerName.swift in Sources */,
 				2E2F9AA128410F7D00D0F0C2 /* BowlingPinCountTest.swift in Sources */,
 				2E2F9A9A2840CA8B00D0F0C2 /* String + Extension.swift in Sources */,
@@ -233,6 +238,7 @@
 			files = (
 				2E9C3B93283FB8E000393DEE /* PlayerName.swift in Sources */,
 				C7640416274F2F5100A223B5 /* main.swift in Sources */,
+				2E2F9AA32841111300D0F0C2 /* BowlingPinCount.swift in Sources */,
 				2E2F9A9D2840CC8600D0F0C2 /* PlayerNameParser.swift in Sources */,
 				2E2F9A972840CA1B00D0F0C2 /* String + Extension.swift in Sources */,
 				2E9C3B82283FB79700393DEE /* InputView.swift in Sources */,
