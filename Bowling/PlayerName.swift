@@ -13,9 +13,12 @@ struct PlayerName {
     let value: String
     
     init?(_ value: String) {
-        if value.count > letterCount || value.contains(blank) {
+        guard value.count == letterCount
+            && value.contains(blank) == false
+            && value.containsOnlyAlphabet else {
             return nil
         }
+        
         self.value = value
     }
 }

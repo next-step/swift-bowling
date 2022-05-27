@@ -9,6 +9,7 @@ import Foundation
 
 extension String {
     var containsOnlyAlphabet: Bool {
-        range(of: "[a-zA-Z]", options: .regularExpression) == nil
+        if self.isEmpty { return false }
+        return range(of: "[^a-zA-Z]", options: .regularExpression) == nil
     }
 }
