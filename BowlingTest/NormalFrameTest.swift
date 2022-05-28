@@ -7,6 +7,12 @@
 
 import XCTest
 
+extension NormalFrame: Equatable {
+    static func == (lhs: NormalFrame, rhs: NormalFrame) -> Bool {
+        lhs.counts == rhs.counts
+    }
+}
+
 class NormalFrameTest: XCTestCase {
 
     func test_NormalFrame_save_핀카운트를_저장한다() {
@@ -53,5 +59,31 @@ class NormalFrameTest: XCTestCase {
         
         // then,
         XCTAssertFalse(result)
+    }
+    
+    func test_NormalFrame이_사용되고있는_bowlingGame이_있을때_자신이필요한_pinCount를_모두채웠다면_bowlingGame의_frame을_다음_frame으로_교체해준다() {
+        // given
+        guard let playerName = PlayerName("jyp") else {
+            XCTFail()
+            return
+        }
+        let pinCountReader = StubPinCountReader(pinCounts: [])
+        let bowlingGame = BowlingGame(playerName: playerName, pinCountReader: pinCountReader)
+        
+        let frame = NormalFrame(bowlingGame: bowlingGame)
+        
+        guard let firstPinCount = PinCount(2),
+              let secondPinCount = PinCount(8) else {
+                  XCTFail()
+                  return
+              }
+        
+        // when
+        frame.save(pinCount: firstPinCount)
+        frame.save(pinCount: secondPinCount)
+
+        XCTAssertNotEqual(bowlingGame.currentFrame as! NormalFrame, frame)
+        
+        // then
     }
 }
