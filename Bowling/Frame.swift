@@ -45,7 +45,7 @@ class NormalFrame: Frame {
     func needPinCount() -> Bool {
         if counts.count == Int.zero { return true }
         if counts.count == maxPinCount { return false }
-        return sumCountsValue() < BowlingConstant.maxCountValue
+        return sumCountsValue() < BowlingConstant.pinCountOfStrike
     }
     
     func sumCountsValue() -> Int {
@@ -59,6 +59,6 @@ class FinalFrame: NormalFrame {
     override func needPinCount() -> Bool {
         if counts.count == Int.zero { return true }
         if counts.count == 1 { return true }
-        return counts.count == 2 && sumCountsValue() >= BowlingConstant.maxCountValue
+        return counts.count == 2 && sumCountsValue() >= BowlingConstant.pinCountOfStrike
     }
 }

@@ -9,5 +9,5 @@ import Foundation
 
 enum BowlingConstant {
     static let maxFrameCount = 10
-    static let maxCountValue = 10
+    static let pinCountOfStrike = 10
 }
