@@ -7,7 +7,7 @@
 
 import Foundation
 
-fileprivate protocol Frame {
+protocol Frame {
     func save(pinCount: PinCount)
 }
 
