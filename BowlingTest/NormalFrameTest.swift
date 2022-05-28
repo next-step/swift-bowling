@@ -61,6 +61,24 @@ class NormalFrameTest: XCTestCase {
         XCTAssertFalse(result)
     }
     
+    func test_needPinCount_NormalFrame_첫번재_카운트에서_스트라이크를_칠_경우_false를_반환한다() {
+        // given
+        let frame = NormalFrame()
+        
+        guard let firstPinCount = PinCount(10) else {
+                  XCTFail()
+                  return
+              }
+        
+        frame.save(pinCount: firstPinCount)
+        
+        // when
+        let result = frame.needPinCount()
+        
+        // then,
+        XCTAssertFalse(result)
+    }
+    
     func test_NormalFrame이_사용되고있는_bowlingGame이_있을때_자신이필요한_pinCount를_모두채웠다면_bowlingGame의_frame을_다음_frame으로_교체해준다() {
         // given
         guard let playerName = PlayerName("jyp") else {
@@ -82,8 +100,7 @@ class NormalFrameTest: XCTestCase {
         frame.save(pinCount: firstPinCount)
         frame.save(pinCount: secondPinCount)
 
-        XCTAssertNotEqual(bowlingGame.currentFrame as! NormalFrame, frame)
-        
         // then
+        XCTAssertNotEqual(bowlingGame.currentFrame as! NormalFrame, frame)
     }
 }
