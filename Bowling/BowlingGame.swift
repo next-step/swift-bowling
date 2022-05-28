@@ -24,6 +24,7 @@ struct BowlingGame {
     func start() throws -> ScoreBoard {
         let pinCount = pinCountReader.readPinCount()
         currentFrame.save(pinCount: pinCount)
+    
         let frame1Count1 = PinCount(5)!
         let frame1Count2 = PinCount(0)! // gutter
 

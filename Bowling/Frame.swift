@@ -10,6 +10,7 @@ import Foundation
 protocol Frame {
     var counts: [PinCount] { get }
     func save(pinCount: PinCount)
+    func needPinCount() -> Bool 
 }
 
 class NormalFrame: Frame {
