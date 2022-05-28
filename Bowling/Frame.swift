@@ -26,6 +26,18 @@ class NormalFrame: Frame {
     
     func save(pinCount: PinCount) {
         counts.append(pinCount)
+        
+        if index >= 10 { return }
+        
+        let nextFrame: Frame
+        if index == 9 {
+            nextFrame = NormalFrame(bowlingGame: bowlingGame)
+            bowlingGame?.chanegCurrenFrame(frame: nextFrame)
+            return
+        }
+        nextFrame = FinalFrame(bowlingGame: bowlingGame)
+        bowlingGame?.chanegCurrenFrame(frame: nextFrame)
+        return
     }
     
     func needPinCount() -> Bool {
