@@ -10,12 +10,18 @@ import Foundation
 protocol Frame {
     var counts: [PinCount] { get }
     func save(pinCount: PinCount)
-    func needPinCount() -> Bool 
+    func needPinCount() -> Bool
 }
 
 class NormalFrame: Frame {
     private(set) var counts = [PinCount]()
     private let maxPinCount = 2
+    
+    private let bowlingGame: BowlingGame?
+    
+    init(bowlingGame: BowlingGame? = nil) {
+        self.bowlingGame = bowlingGame
+    }
     
     func save(pinCount: PinCount) {
         counts.append(pinCount)
