@@ -79,7 +79,7 @@ class NormalFrameTest: XCTestCase {
         XCTAssertFalse(result)
     }
     
-    func test_NormalFrame이_사용되고있는_bowlingGame이_있을때_자신이필요한_pinCount를_모두채웠다면_bowlingGame의_frame을_다음_frame으로_교체해준다() {
+    func test_save_NormalFrame이_사용되고있는_bowlingGame이_있을때_자신이필요한_pinCount를_모두채웠다면_bowlingGame의_frame을_다음_frame으로_교체해준다() {
         // given
         guard let playerName = PlayerName("jyp") else {
             XCTFail()
@@ -102,5 +102,26 @@ class NormalFrameTest: XCTestCase {
 
         // then
         XCTAssertNotEqual(bowlingGame.currentFrame as! NormalFrame, frame)
+    }
+    
+    func test_save_최대2개까지만_PinCount를_가진다() {
+        // given
+        let frame = NormalFrame()
+        guard let firstPinCount = PinCount(2),
+              let secondPinCount = PinCount(8),
+              let thirdPinCount = PinCount(10) else {
+                  XCTFail()
+                  return
+              }
+        
+        // when
+        frame.save(pinCount: firstPinCount)
+        frame.save(pinCount: secondPinCount)
+        frame.save(pinCount: thirdPinCount)
+        
+        // then
+        XCTAssertTrue(frame.counts.contains(firstPinCount))
+        XCTAssertTrue(frame.counts.contains(secondPinCount))
+        XCTAssertFalse(frame.counts.contains(thirdPinCount))
     }
 }
