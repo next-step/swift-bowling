@@ -48,12 +48,15 @@ class NormalFrame: Frame {
     }
     
     func needPinCount() -> Bool {
-        if counts.count == 0 { return true }
+        if counts.count == Int.zero { return true }
         if counts.count == maxPinCount { return false }
-        let sum = counts.reduce(0, { partialResult, count in
+        return sumCountsValue() < BowlingConstant.maxCountValue
+    }
+    
+    private func sumCountsValue() -> Int {
+        return counts.reduce(Int.zero, { partialResult, count in
             partialResult + count.value
         })
-        return sum < 10
     }
 }
 
