@@ -14,11 +14,10 @@ protocol Frame {
 }
 
 class NormalFrame: Frame {
-    private(set) var counts = [PinCount]()
-    private let maxPinCount = 2
+    var counts = [PinCount]()
     
+    private let maxPinCount = 2
     private var bowlingGame: BowlingGame?
-    private var index: Int = 0
     
     init(bowlingGame: BowlingGame? = nil) {
         self.bowlingGame = bowlingGame
@@ -27,21 +26,34 @@ class NormalFrame: Frame {
     func save(pinCount: PinCount) {
         counts.append(pinCount)
         
-        if index >= 10 { return }
+        if counts.count == 0 { return  }
+        if counts.count == 1  {
+            let sum = counts.reduce(0, { partialResult, count in
+                partialResult + count.value
+            })
+            if sum < 10 { return }
+        }
         
-        let nextFrame: Frame
-        if index == 9 {
-            nextFrame = NormalFrame(bowlingGame: bowlingGame)
-            bowlingGame?.changeCurrenFrame(frame: nextFrame)
+        guard let bowlingGame = bowlingGame else { return }
+
+        if bowlingGame.needLastFrame() == true {
+            let nextFrame = FinalFrame(bowlingGame: bowlingGame)
+            bowlingGame.changeCurrenFrame(frame: nextFrame)
             return
         }
-        nextFrame = FinalFrame(bowlingGame: bowlingGame)
-        bowlingGame?.changeCurrenFrame(frame: nextFrame)
+        
+        let nextFrame = NormalFrame(bowlingGame: bowlingGame)
+        bowlingGame.changeCurrenFrame(frame: nextFrame)
         return
     }
     
     func needPinCount() -> Bool {
-        return counts.count < maxPinCount
+        if counts.count == 0 { return true }
+        if counts.count == maxPinCount { return false }
+        let sum = counts.reduce(0, { partialResult, count in
+            partialResult + count.value
+        })
+        return sum < 10
     }
 }
 
