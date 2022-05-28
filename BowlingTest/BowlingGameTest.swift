@@ -56,7 +56,6 @@ class BowlingGameTest: XCTestCase {
         let frame10Count2 = PinCount(2) // spare
         let frame10Count3 = PinCount(7)
         
-        
         let pinCounts = [frame1Count1, frame1Count2,
                          frame2Count1, frame2Count2,
                          frame3Count1,
@@ -64,7 +63,7 @@ class BowlingGameTest: XCTestCase {
                          frame5Count1, frame5Count2,
                          frame6Count1, frame6Count2,
                          frame7Count1, frame7Count2,
-                         frame8Count1, frame8Count1,
+                         frame8Count1,
                          frame9Count1,
                          frame10Count1, frame10Count2, frame10Count3].compactMap { $0 }
         
@@ -75,33 +74,32 @@ class BowlingGameTest: XCTestCase {
         let scoreBoard = try bowlingGame.start()
         
         // then
-        XCTAssertTrue(scoreBoard.frame[0].counts.contains(frame1Count1))
-        XCTAssertTrue(scoreBoard.frame[0].counts.contains(frame1Count2))
+        XCTAssertTrue(scoreBoard.frames[0].counts.contains { $0.value == frame1Count1?.value })
+        XCTAssertTrue(scoreBoard.frames[0].counts.contains { $0.value == frame1Count2?.value })
         
-        XCTAssertTrue(scoreBoard.frame[1].counts.contains(frame2Count1))
-        XCTAssertTrue(scoreBoard.frame[1].counts.contains(frame2Count2))
+        XCTAssertTrue(scoreBoard.frames[1].counts.contains { $0.value == frame2Count1?.value })
+        XCTAssertTrue(scoreBoard.frames[1].counts.contains { $0.value == frame2Count2?.value })
         
-        XCTAssertTrue(scoreBoard.frame[2].counts.contains(frame3Count1))
+        XCTAssertTrue(scoreBoard.frames[2].counts.contains { $0.value == frame3Count1?.value })
         
-        XCTAssertTrue(scoreBoard.frame[3].counts.contains(frame4Count1))
-        XCTAssertTrue(scoreBoard.frame[3].counts.contains(frame4Count2))
+        XCTAssertTrue(scoreBoard.frames[3].counts.contains { $0.value == frame4Count1?.value })
+        XCTAssertTrue(scoreBoard.frames[3].counts.contains { $0.value == frame4Count2?.value })
         
-        XCTAssertTrue(scoreBoard.frame[4].counts.contains(frame5Count1))
-        XCTAssertTrue(scoreBoard.frame[4].counts.contains(frame5Count2))
+        XCTAssertTrue(scoreBoard.frames[4].counts.contains { $0.value == frame5Count1?.value })
+        XCTAssertTrue(scoreBoard.frames[4].counts.contains { $0.value == frame5Count2?.value })
         
-        XCTAssertTrue(scoreBoard.frame[5].counts.contains(frame6Count1))
-        XCTAssertTrue(scoreBoard.frame[5].counts.contains(frame6Count1))
+        XCTAssertTrue(scoreBoard.frames[5].counts.contains { $0.value == frame6Count1?.value })
+        XCTAssertTrue(scoreBoard.frames[5].counts.contains { $0.value == frame6Count2?.value })
         
-        XCTAssertTrue(scoreBoard.frame[6].counts.contains(frame7Count1))
-        XCTAssertTrue(scoreBoard.frame[6].counts.contains(frame7Count2))
+        XCTAssertTrue(scoreBoard.frames[6].counts.contains { $0.value == frame7Count1?.value })
+        XCTAssertTrue(scoreBoard.frames[6].counts.contains { $0.value == frame7Count2?.value })
         
-        XCTAssertTrue(scoreBoard.frame[7].counts.contains(frame8Count1))
-        XCTAssertTrue(scoreBoard.frame[7].counts.contains(frame8Count2))
+        XCTAssertTrue(scoreBoard.frames[7].counts.contains { $0.value == frame8Count1?.value })
         
-        XCTAssertTrue(scoreBoard.frame[8].counts.contains(frame9Count1))
+        XCTAssertTrue(scoreBoard.frames[8].counts.contains { $0.value == frame9Count1?.value })
         
-        XCTAssertTrue(scoreBoard.frame[9].counts.contains(frame10Count1))
-        XCTAssertTrue(scoreBoard.frame[9].counts.contains(frame10Count2))
-        XCTAssertTrue(scoreBoard.frame[9].counts.contains(frame10Count3))
+        XCTAssertTrue(scoreBoard.frames[9].counts.contains { $0.value == frame10Count1?.value })
+        XCTAssertTrue(scoreBoard.frames[9].counts.contains { $0.value == frame10Count2?.value })
+        XCTAssertTrue(scoreBoard.frames[9].counts.contains { $0.value == frame10Count3?.value })
     }
 }
