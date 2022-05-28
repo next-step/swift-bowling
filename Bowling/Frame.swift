@@ -14,13 +14,14 @@ protocol Frame {
 
 class NormalFrame: Frame {
     private(set) var counts = [PinCount]()
+    private let maxPinCount = 2
     
     func save(pinCount: PinCount) {
         counts.append(pinCount)
     }
     
     func needPinCount() -> Bool {
-        return true
+        return counts.count < maxPinCount 
     }
 }
 
