@@ -20,4 +20,15 @@ class NormalFrameTest: XCTestCase {
         // then
         XCTAssertTrue(frame.counts.contains { $0.value == pinCount.value })
     }
+    
+    func test_needPinCount_현재_frame을_끝내기위해_Count가_더필요하면_true를_반환한다() {
+        // given
+        let frame = NormalFrame()
+        
+        // when
+        let result = frame.needPinCount()
+        
+        // then
+        XCTAssertTrue(result)
+    }
 }
