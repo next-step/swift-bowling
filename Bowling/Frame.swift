@@ -17,7 +17,8 @@ class NormalFrame: Frame {
     private(set) var counts = [PinCount]()
     private let maxPinCount = 2
     
-    private let bowlingGame: BowlingGame?
+    private var bowlingGame: BowlingGame?
+    private var index: Int = 0
     
     init(bowlingGame: BowlingGame? = nil) {
         self.bowlingGame = bowlingGame
