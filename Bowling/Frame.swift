@@ -16,6 +16,11 @@ struct Frame {
     mutating func roll(fallDown pin: Int) {
         self.fallenPins += pin
         self.rollCount += 1
+        
+        self.setCurrentState()
+    }
+    
+    private mutating func setCurrentState() {
         switch fallenPins {
         case 10 where rollCount == 1:
             self.state = .strike
