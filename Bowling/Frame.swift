@@ -8,6 +8,7 @@
 import Foundation
 
 protocol Frame {
+    var counts: [PinCount] { get }
     func save(pinCount: PinCount)
 }
 
@@ -16,6 +17,10 @@ class NormalFrame: Frame {
     
     func save(pinCount: PinCount) {
         counts.append(pinCount)
+    }
+    
+    func needPinCount() -> Bool {
+        return true
     }
 }
 
