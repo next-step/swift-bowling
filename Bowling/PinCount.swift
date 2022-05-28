@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PinCount {
+struct PinCount: Equatable {
     private let zero = 0
     let value: Int
     
