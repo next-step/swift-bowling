@@ -87,4 +87,23 @@ class FinalFrameTest: XCTestCase {
         // then
         XCTAssertTrue(result)
     }
+    
+    func test_needPinCount_pinCount의_개수가_2개일때_miss상태이면_false를_반환한다() {
+        // given
+        let frame = FinalFrame()
+        guard let firstPinCount = PinCount(0),
+              let secondPinCount = PinCount(9) else {
+                  XCTFail()
+                  return
+              }
+        
+        frame.save(pinCount: firstPinCount)
+        frame.save(pinCount: secondPinCount)
+        
+        // when
+        let result = frame.needPinCount()
+      
+        // then
+        XCTAssertFalse(result)
+    }
 }
