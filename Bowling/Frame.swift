@@ -9,11 +9,20 @@ import Foundation
 
 protocol Frame {
     var counts: [PinCount] { get }
-    func save(pinCount: PinCount)
+    func save(pinCount: PinCount) throws
     func needPinCount() -> Bool
 }
 
 class NormalFrame: Frame {
+    enum Error: LocalizedError {
+        case invalidPinCounts
+        
+        var errorDescription: String? {
+            switch self {
+            case .invalidPinCounts: return "Frame이 가질 수 있는 Count 개수를 초과했습니다."
+            }
+        }
+    }
     var counts = [PinCount]()
     
     private let maxPinCount = 2
@@ -23,23 +32,13 @@ class NormalFrame: Frame {
         self.bowlingGame = bowlingGame
     }
     
-    func save(pinCount: PinCount) {
+    func save(pinCount: PinCount) throws {
         if needPinCount() {
             counts.append(pinCount)
             return
         }
         
-        guard let bowlingGame = bowlingGame else { return }
-
-        if bowlingGame.needLastFrame() == true {
-            let nextFrame = FinalFrame(bowlingGame: bowlingGame)
-            bowlingGame.changeCurrenFrame(frame: nextFrame)
-            return
-        }
-        
-        let nextFrame = NormalFrame(bowlingGame: bowlingGame)
-        bowlingGame.changeCurrenFrame(frame: nextFrame)
-        return
+        throw Error.invalidPinCounts
     }
     
     func needPinCount() -> Bool {
