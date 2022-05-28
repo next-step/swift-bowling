@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		A5C55B7628429BB000FBEC4D /* BowlingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7528429BB000FBEC4D /* BowlingTest.swift */; };
+		A5C55B7B28429CBB00FBEC4D /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7A28429CBB00FBEC4D /* Frame.swift */; };
+		A5C55B7C28429CBB00FBEC4D /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7A28429CBB00FBEC4D /* Frame.swift */; };
+		A5C55B7E28429D0F00FBEC4D /* FrameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7D28429D0F00FBEC4D /* FrameState.swift */; };
+		A5C55B7F28429D0F00FBEC4D /* FrameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7D28429D0F00FBEC4D /* FrameState.swift */; };
 		C7640416274F2F5100A223B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,8 @@
 /* Begin PBXFileReference section */
 		A5C55B7328429BB000FBEC4D /* BowlingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5C55B7528429BB000FBEC4D /* BowlingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingTest.swift; sourceTree = "<group>"; };
+		A5C55B7A28429CBB00FBEC4D /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		A5C55B7D28429D0F00FBEC4D /* FrameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameState.swift; sourceTree = "<group>"; };
 		C7640412274F2F5100A223B5 /* Bowling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bowling; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7640415274F2F5100A223B5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				C7640415274F2F5100A223B5 /* main.swift */,
+				A5C55B7A28429CBB00FBEC4D /* Frame.swift */,
+				A5C55B7D28429D0F00FBEC4D /* FrameState.swift */,
 			);
 			path = Bowling;
 			sourceTree = "<group>";
@@ -172,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C55B7628429BB000FBEC4D /* BowlingTest.swift in Sources */,
+				A5C55B7F28429D0F00FBEC4D /* FrameState.swift in Sources */,
+				A5C55B7C28429CBB00FBEC4D /* Frame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7640416274F2F5100A223B5 /* main.swift in Sources */,
+				A5C55B7E28429D0F00FBEC4D /* FrameState.swift in Sources */,
+				A5C55B7B28429CBB00FBEC4D /* Frame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
