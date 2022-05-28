@@ -36,4 +36,14 @@ class BowlingTest: XCTestCase {
         
         XCTAssertEqual(sut.state, expected)
     }
+    
+    func test_핀을_하나라도_쓰러트리지_못하면_거터() {
+        var sut: Frame = Frame()
+        sut.roll(fallDown: 0)
+        sut.roll(fallDown: 0)
+        
+        let expected: FrameState = .gutter
+        
+        XCTAssertEqual(sut.state, expected)
+    }
 }

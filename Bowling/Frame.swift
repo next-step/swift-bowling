@@ -26,6 +26,8 @@ struct Frame {
             self.state = .strike
         case 10:
             self.state = .spare
+        case 1...9 where rollCount == 2:
+            self.state = .miss
         default:
             self.state = .none
         }
