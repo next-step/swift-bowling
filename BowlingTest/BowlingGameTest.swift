@@ -102,4 +102,18 @@ class BowlingGameTest: XCTestCase {
         XCTAssertTrue(scoreBoard.frames[9].counts.contains { $0.value == frame10Count2?.value })
         XCTAssertTrue(scoreBoard.frames[9].counts.contains { $0.value == frame10Count3?.value })
     }
+    
+    func test_changeCurrentFrame_주어진_frame으로_currentFrame프로퍼티가_변경된다() {
+        // given
+    
+        let playerName = PlayerName("jyp")!
+        var bowlingGame = BowlingGame(playerName: playerName, pinCountReader: StubPinCountReader(pinCounts: []))
+        let frame = NormalFrame()
+        
+        // when
+        bowlingGame.chanegCurrenFrame(frame: frame)
+        
+        // then
+        XCTAssertEqual(bowlingGame.currentFrame.counts, frame.counts)
+    }
 }
