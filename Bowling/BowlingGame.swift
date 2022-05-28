@@ -12,7 +12,7 @@ struct BowlingGame {
     private let pinCountReader: PinCountReader
     
     private var frames = [Frame]()
-    private var currentFrame: Frame
+    private(set) var currentFrame: Frame
     
     init(playerName: PlayerName, pinCountReader: PinCountReader) {
         self.playerName = playerName
