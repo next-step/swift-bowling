@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5C55B7628429BB000FBEC4D /* BowlingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7528429BB000FBEC4D /* BowlingTest.swift */; };
 		C7640416274F2F5100A223B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +24,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A5C55B7328429BB000FBEC4D /* BowlingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5C55B7528429BB000FBEC4D /* BowlingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingTest.swift; sourceTree = "<group>"; };
 		C7640412274F2F5100A223B5 /* Bowling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bowling; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7640415274F2F5100A223B5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A5C55B7028429BB000FBEC4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C764040F274F2F5100A223B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +48,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5C55B7428429BB000FBEC4D /* BowlingTest */ = {
+			isa = PBXGroup;
+			children = (
+				A5C55B7528429BB000FBEC4D /* BowlingTest.swift */,
+			);
+			path = BowlingTest;
+			sourceTree = "<group>";
+		};
 		C7640409274F2F5100A223B5 = {
 			isa = PBXGroup;
 			children = (
 				C7640414274F2F5100A223B5 /* Bowling */,
+				A5C55B7428429BB000FBEC4D /* BowlingTest */,
 				C7640413274F2F5100A223B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C7640412274F2F5100A223B5 /* Bowling */,
+				A5C55B7328429BB000FBEC4D /* BowlingTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +85,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A5C55B7228429BB000FBEC4D /* BowlingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5C55B7728429BB000FBEC4D /* Build configuration list for PBXNativeTarget "BowlingTest" */;
+			buildPhases = (
+				A5C55B6F28429BB000FBEC4D /* Sources */,
+				A5C55B7028429BB000FBEC4D /* Frameworks */,
+				A5C55B7128429BB000FBEC4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BowlingTest;
+			productName = BowlingTest;
+			productReference = A5C55B7328429BB000FBEC4D /* BowlingTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C7640411274F2F5100A223B5 /* Bowling */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7640419274F2F5100A223B5 /* Build configuration list for PBXNativeTarget "Bowling" */;
@@ -89,9 +126,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					A5C55B7228429BB000FBEC4D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					C7640411274F2F5100A223B5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -111,11 +151,30 @@
 			projectRoot = "";
 			targets = (
 				C7640411274F2F5100A223B5 /* Bowling */,
+				A5C55B7228429BB000FBEC4D /* BowlingTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A5C55B7128429BB000FBEC4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		A5C55B6F28429BB000FBEC4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5C55B7628429BB000FBEC4D /* BowlingTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C764040E274F2F5100A223B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,6 +186,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		A5C55B7828429BB000FBEC4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF5QAKW287;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.woosub.BowlingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A5C55B7928429BB000FBEC4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QF5QAKW287;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.woosub.BowlingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		C7640417274F2F5100A223B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -265,6 +356,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A5C55B7728429BB000FBEC4D /* Build configuration list for PBXNativeTarget "BowlingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5C55B7828429BB000FBEC4D /* Debug */,
+				A5C55B7928429BB000FBEC4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C764040D274F2F5100A223B5 /* Build configuration list for PBXProject "Bowling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
