@@ -21,13 +21,13 @@ class BowlingFrames {
             return lastFrame
         }
         
-        if value.count == 9 {
+        if value.count == BowlingConstant.maxFrameCount - 1 {
             let frame = FinalFrame()
             value.append(frame)
             return frame
         }
         
-        if value.count == 10 {
+        if value.count == BowlingConstant.maxFrameCount {
             return nil
         }
         
