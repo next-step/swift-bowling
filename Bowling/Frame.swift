@@ -26,13 +26,7 @@ class NormalFrame: Frame {
     func save(pinCount: PinCount) {
         counts.append(pinCount)
         
-        if counts.count == 0 { return  }
-        if counts.count == 1  {
-            let sum = counts.reduce(0, { partialResult, count in
-                partialResult + count.value
-            })
-            if sum < 10 { return }
-        }
+        if needPinCount() { return }
         
         guard let bowlingGame = bowlingGame else { return }
 
