@@ -12,7 +12,10 @@ class NormalFrameTest: XCTestCase {
     func test_NormalFrame_save_핀카운트를_저장한다() {
         // given
         let frame = NormalFrame()
-        let pinCount = PinCount(9)!
+        guard let pinCount = PinCount(9) else {
+            XCTFail()
+            return
+        }
         
         // when
         frame.save(pinCount: pinCount)
@@ -49,6 +52,6 @@ class NormalFrameTest: XCTestCase {
         let result = frame.needPinCount()
         
         // then,
-        XCTAssertFalseg(result)
+        XCTAssertFalse(result)
     }
 }
