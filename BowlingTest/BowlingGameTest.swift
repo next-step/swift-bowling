@@ -111,7 +111,7 @@ class BowlingGameTest: XCTestCase {
         let frame = NormalFrame()
         
         // when
-        bowlingGame.chanegCurrenFrame(frame: frame)
+        bowlingGame.changeCurrenFrame(frame: frame)
         
         // then
         XCTAssertEqual(bowlingGame.currentFrame.counts, frame.counts)

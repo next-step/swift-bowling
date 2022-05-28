@@ -32,11 +32,11 @@ class NormalFrame: Frame {
         let nextFrame: Frame
         if index == 9 {
             nextFrame = NormalFrame(bowlingGame: bowlingGame)
-            bowlingGame?.chanegCurrenFrame(frame: nextFrame)
+            bowlingGame?.changeCurrenFrame(frame: nextFrame)
             return
         }
         nextFrame = FinalFrame(bowlingGame: bowlingGame)
-        bowlingGame?.chanegCurrenFrame(frame: nextFrame)
+        bowlingGame?.changeCurrenFrame(frame: nextFrame)
         return
     }
     
