@@ -21,7 +21,7 @@ class NormalFrame: Frame {
     }
     
     func needPinCount() -> Bool {
-        return counts.count < maxPinCount 
+        return counts.count < maxPinCount
     }
 }
 

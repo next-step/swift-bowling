@@ -31,4 +31,24 @@ class NormalFrameTest: XCTestCase {
         // then
         XCTAssertTrue(result)
     }
+    
+    func test_needPinCount_현재_frame을_끝내기위해_Count가_더필요하지않으면_false를_반환한다() {
+        // given
+        let frame = NormalFrame()
+        
+        guard let firstPinCount = PinCount(2),
+              let secondPinCount = PinCount(8) else {
+                  XCTFail()
+                  return
+              }
+        
+        frame.save(pinCount: firstPinCount)
+        frame.save(pinCount: secondPinCount)
+        
+        // when
+        let result = frame.needPinCount()
+        
+        // then,
+        XCTAssertFalseg(result)
+    }
 }
