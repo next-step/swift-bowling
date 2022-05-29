@@ -28,6 +28,8 @@ struct Frame {
             self.state = .spare
         case 1...9 where rollCount == 2:
             self.state = .miss
+        case 0 where rollCount == 2:
+            self.state = .gutter
         default:
             self.state = .none
         }
