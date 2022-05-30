@@ -8,7 +8,7 @@
 import XCTest
 
 class BowlingFramesTest: XCTestCase {
-
+    
     func test_nextFrame_마지막Frame이_pinCount가_더필요하면_마지막Frame을_반환한다() {
         // given
         let frame = NormalFrame()

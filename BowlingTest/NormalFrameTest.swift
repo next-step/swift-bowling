@@ -9,7 +9,7 @@ import XCTest
 
 
 class NormalFrameTest: XCTestCase {
-
+    
     func test_NormalFrame_save_핀카운트를_저장한다() throws {
         // given
         let frame = NormalFrame()
@@ -61,9 +61,9 @@ class NormalFrameTest: XCTestCase {
         let frame = NormalFrame()
         
         guard let firstPinCount = PinCount(10) else {
-                  XCTFail()
-                  return
-              }
+            XCTFail()
+            return
+        }
         
         try frame.save(pinCount: firstPinCount)
         
@@ -94,7 +94,7 @@ class NormalFrameTest: XCTestCase {
         // when
         try frame.save(pinCount: firstPinCount)
         try frame.save(pinCount: secondPinCount)
-
+        
         // then
         XCTAssertNotEqual(bowlingGame.currentFrame as! NormalFrame, frame)
     }

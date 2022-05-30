@@ -8,7 +8,7 @@
 import XCTest
 
 class FinalFrameTest: XCTestCase {
-
+    
     func test_save_2번째카운트까지_상태가_miss일경우_2개의_pinCount를_갖는다() throws {
         // given
         let frame = FinalFrame()
@@ -102,7 +102,7 @@ class FinalFrameTest: XCTestCase {
         
         // when
         let result = frame.needPinCount()
-      
+        
         // then
         XCTAssertFalse(result)
     }
@@ -121,7 +121,7 @@ class FinalFrameTest: XCTestCase {
         
         // when
         let result = frame.needPinCount()
-      
+        
         // then
         XCTAssertTrue(result)
     }
@@ -140,7 +140,7 @@ class FinalFrameTest: XCTestCase {
         
         // when
         let result = frame.needPinCount()
-      
+        
         // then
         XCTAssertTrue(result)
     }

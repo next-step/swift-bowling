@@ -8,7 +8,7 @@
 import XCTest
 
 class StringExtensionTest: XCTestCase {
-
+    
     func test_containsOnlyAlphabet() {
         XCTAssertTrue("asd".containsOnlyAlphabet)
         XCTAssertFalse("".containsOnlyAlphabet)

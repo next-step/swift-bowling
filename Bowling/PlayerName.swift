@@ -14,10 +14,10 @@ struct PlayerName {
     
     init?(_ value: String) {
         guard value.count == letterCount
-            && value.contains(blank) == false
-            && value.containsOnlyAlphabet else {
-            return nil
-        }
+                && value.contains(blank) == false
+                && value.containsOnlyAlphabet else {
+                    return nil
+                }
         
         self.value = value
     }

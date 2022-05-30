@@ -9,7 +9,7 @@ import XCTest
 @testable import Bowling
 
 class PinCountParserTest: XCTestCase {
-
+    
     func test_parse_문자열을_PinCount인스턴스로_파싱해_반환한다() throws {
         // given
         let input = "0"

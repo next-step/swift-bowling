@@ -30,28 +30,28 @@ class BowlingGameTest: XCTestCase {
         
         let frame1Count1 = PinCount(5)
         let frame1Count2 = PinCount(0) // gutter
-
+        
         let frame2Count1 = PinCount(8)
         let frame2Count2 = PinCount(2) // spare
-
+        
         let frame3Count1 = PinCount(10) // strike
-
+        
         let frame4Count1 = PinCount(0)
         let frame4Count2 = PinCount(0) // gutter
-
+        
         let frame5Count1 = PinCount(0)
         let frame5Count2 = PinCount(9) // miss
-
+        
         let frame6Count1 = PinCount(3)
         let frame6Count2 = PinCount(5) // miss
-
+        
         let frame7Count1 = PinCount(0)
         let frame7Count2 = PinCount(10) // spare
-
+        
         let frame8Count1 = PinCount(10) // strike
-
+        
         let frame9Count1 = PinCount(10) // strike
-
+        
         let frame10Count1 = PinCount(8)
         let frame10Count2 = PinCount(2) // spare
         let frame10Count3 = PinCount(7)
