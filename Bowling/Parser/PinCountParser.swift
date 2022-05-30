@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct PinCountParser {
+    enum Error: LocalizedError {
+        case invalidInput
+    }
+    
+    static func parse(pinCountInput: String?) throws -> PinCount {
+        return PinCount(0)!
+    }
+}

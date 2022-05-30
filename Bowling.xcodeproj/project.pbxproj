@@ -34,6 +34,7 @@
 		2E4E55342844C468001B5554 /* OutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E55332844C468001B5554 /* OutputView.swift */; };
 		2E4E55362844E969001B5554 /* PinCountParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E55352844E969001B5554 /* PinCountParser.swift */; };
 		2E4E55382844E9CA001B5554 /* PinCountParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E55372844E9CA001B5554 /* PinCountParserTest.swift */; };
+		2E4E55392844EC80001B5554 /* PinCountParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4E55352844E969001B5554 /* PinCountParser.swift */; };
 		2E9C3B82283FB79700393DEE /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B81283FB79700393DEE /* InputView.swift */; };
 		2E9C3B8A283FB80700393DEE /* BowlingGameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B89283FB80700393DEE /* BowlingGameTest.swift */; };
 		2E9C3B91283FB84A00393DEE /* PlayerNameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C3B90283FB84A00393DEE /* PlayerNameTest.swift */; };
@@ -272,6 +273,7 @@
 				2E2F9AA928411E4A00D0F0C2 /* Frame.swift in Sources */,
 				2E2F9A992840CA6900D0F0C2 /* StringExtensionTest.swift in Sources */,
 				2E2F9AB82842486700D0F0C2 /* FinalFrameTest.swift in Sources */,
+				2E4E55392844EC80001B5554 /* PinCountParser.swift in Sources */,
 				2E2F9AAE2841F8FC00D0F0C2 /* PinCountReader.swift in Sources */,
 				2E2F9AA42841111300D0F0C2 /* PinCount.swift in Sources */,
 				2E9C3B94283FB90300393DEE /* PlayerName.swift in Sources */,

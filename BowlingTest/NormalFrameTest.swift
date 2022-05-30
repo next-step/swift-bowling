@@ -7,11 +7,6 @@
 
 import XCTest
 
-extension NormalFrame: Equatable {
-    static func == (lhs: NormalFrame, rhs: NormalFrame) -> Bool {
-        lhs.counts == rhs.counts
-    }
-}
 
 class NormalFrameTest: XCTestCase {
 
