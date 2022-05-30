@@ -69,6 +69,32 @@
 			path = BowlingTest;
 			sourceTree = "<group>";
 		};
+		A5C55B9828449DEA00FBEC4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5C55B802843CF2D00FBEC4D /* BowlingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5C55B9928449DF000FBEC4D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A5C55B832843D17E00FBEC4D /* BowlingError.swift */,
+				A5C55B7A28429CBB00FBEC4D /* Frame.swift */,
+				A5C55B7D28429D0F00FBEC4D /* FrameState.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A5C55B9D28449ED800FBEC4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5C55B9528449AB900FBEC4D /* BowlingInputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C7640409274F2F5100A223B5 = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +116,10 @@
 		C7640414274F2F5100A223B5 /* Bowling */ = {
 			isa = PBXGroup;
 			children = (
+				A5C55B9D28449ED800FBEC4D /* View */,
+				A5C55B9928449DF000FBEC4D /* Domain */,
+				A5C55B9828449DEA00FBEC4D /* Controller */,
 				C7640415274F2F5100A223B5 /* main.swift */,
-				A5C55B7A28429CBB00FBEC4D /* Frame.swift */,
-				A5C55B7D28429D0F00FBEC4D /* FrameState.swift */,
-				A5C55B802843CF2D00FBEC4D /* BowlingController.swift */,
-				A5C55B9528449AB900FBEC4D /* BowlingInputView.swift */,
-				A5C55B832843D17E00FBEC4D /* BowlingError.swift */,
 			);
 			path = Bowling;
 			sourceTree = "<group>";
