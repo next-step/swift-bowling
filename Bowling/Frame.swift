@@ -11,9 +11,21 @@ protocol Frame {
     var counts: [PinCount] { get }
     func save(pinCount: PinCount) throws
     func needPinCount() -> Bool
+    func isEqual(to frame: Frame) -> Bool
 }
 
-class NormalFrame: Frame {
+extension Frame where Self: Equatable {
+    func isEqual(to frame: Frame) -> Bool {
+        guard let frame = frame as? Self else { return false }
+        return self == frame
+    }
+}
+
+class NormalFrame: Frame, Equatable {
+    static func == (lhs: NormalFrame, rhs: NormalFrame) -> Bool {
+        lhs.counts == rhs.counts
+    }
+    
     enum Error: LocalizedError {
         case invalidPinCounts
         
