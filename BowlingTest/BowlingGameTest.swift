@@ -75,7 +75,7 @@ class BowlingGameTest: XCTestCase {
         
         // then
         XCTAssertTrue(scoreBoard.frames.value[0].counts.contains { $0.value == frame1Count1?.value })
-        XCTAssertTrue(scoreBgoard.frames.value[0].counts.contains { $0.value == frame1Count2?.value })
+        XCTAssertTrue(scoreBoard.frames.value[0].counts.contains { $0.value == frame1Count2?.value })
         
         XCTAssertTrue(scoreBoard.frames.value[1].counts.contains { $0.value == frame2Count1?.value })
         XCTAssertTrue(scoreBoard.frames.value[1].counts.contains { $0.value == frame2Count2?.value })
