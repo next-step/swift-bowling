@@ -11,7 +11,7 @@ enum FrameState: Equatable {
     case strike
     case spare(first: Int)
     case miss(first: Int, second: Int)
-    case none
+    case needToRoll
     
     var description: String {
         switch self {

@@ -28,7 +28,7 @@ struct Pins: Equatable {
         case 1 where sum == 10: return .strike
         case 2 where sum == 10: return .spare(first: pins[0])
         case 2: return .miss(first: pins[0], second: pins[1])
-        default: return .none
+        default: return .needToRoll
         }
     }
     

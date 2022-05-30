@@ -8,7 +8,7 @@
 import Foundation
 
 struct Frame {
-    var state: FrameState = .none
+    var state: FrameState = .needToRoll
     var pins: Pins = Pins()
     
     mutating func roll(fallDown pin: Int) {
