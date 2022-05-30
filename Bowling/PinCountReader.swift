@@ -8,5 +8,5 @@
 import Foundation
 
 protocol PinCountReader {
-    func readPinCount() -> PinCount
+    func readPinCount(ofFrameIndex index: Int) -> PinCount
 }
