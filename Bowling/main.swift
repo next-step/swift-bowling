@@ -9,7 +9,7 @@ import Foundation
 let controller: BowlingController = BowlingController()
 
 do {
-    try controller.a()
+    try controller.start()
 } catch {
     print("Error! \(error)")
 }

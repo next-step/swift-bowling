@@ -10,7 +10,7 @@ import Foundation
 struct BowlingInputView {
     
     func readName() throws -> String {
-        let validEnglishRange: ClosedRange<String> = "A"..."Z"
+        let validEnglishRange: ClosedRange<String> = "AAA"..."ZZZ"
         
         guard let name = readInput(with: "플레이어 이름은(3 english letters)?:") else { throw BowlingError.invalidInput }
         guard validEnglishRange.contains(name), name.count == 3 else { throw BowlingError.invalidInput }
