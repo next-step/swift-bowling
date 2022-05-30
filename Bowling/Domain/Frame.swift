@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Frame {
+class Frame {
     var state: FrameState = .needToRoll(first: nil)
     var pins: Pins = Pins()
     
-    mutating func roll(fallDown pin: Int) {
+    func roll(fallDown pin: Int) {
         self.pins.fallDown(pinCount: pin)
         self.setCurrentState()
     }
@@ -21,7 +21,7 @@ struct Frame {
         return Frame()
     }
     
-    private mutating func setCurrentState() {
+    private func setCurrentState() {
         self.state = pins.getState()
     }
 }
