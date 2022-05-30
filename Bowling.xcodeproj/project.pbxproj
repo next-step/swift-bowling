@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5C55B7628429BB000FBEC4D /* BowlingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7528429BB000FBEC4D /* BowlingTest.swift */; };
+		A5C55B7628429BB000FBEC4D /* FrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7528429BB000FBEC4D /* FrameTest.swift */; };
 		A5C55B7B28429CBB00FBEC4D /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7A28429CBB00FBEC4D /* Frame.swift */; };
 		A5C55B7C28429CBB00FBEC4D /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7A28429CBB00FBEC4D /* Frame.swift */; };
 		A5C55B7E28429D0F00FBEC4D /* FrameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55B7D28429D0F00FBEC4D /* FrameState.swift */; };
@@ -33,7 +33,7 @@
 
 /* Begin PBXFileReference section */
 		A5C55B7328429BB000FBEC4D /* BowlingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5C55B7528429BB000FBEC4D /* BowlingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingTest.swift; sourceTree = "<group>"; };
+		A5C55B7528429BB000FBEC4D /* FrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameTest.swift; sourceTree = "<group>"; };
 		A5C55B7A28429CBB00FBEC4D /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
 		A5C55B7D28429D0F00FBEC4D /* FrameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameState.swift; sourceTree = "<group>"; };
 		A5C55B802843CF2D00FBEC4D /* BowlingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingController.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		A5C55B7428429BB000FBEC4D /* BowlingTest */ = {
 			isa = PBXGroup;
 			children = (
-				A5C55B7528429BB000FBEC4D /* BowlingTest.swift */,
+				A5C55B7528429BB000FBEC4D /* FrameTest.swift */,
 			);
 			path = BowlingTest;
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C55B7628429BB000FBEC4D /* BowlingTest.swift in Sources */,
+				A5C55B7628429BB000FBEC4D /* FrameTest.swift in Sources */,
 				A5C55B7F28429D0F00FBEC4D /* FrameState.swift in Sources */,
 				A5C55B7C28429CBB00FBEC4D /* Frame.swift in Sources */,
 				A5C55B852843D17E00FBEC4D /* BowlingError.swift in Sources */,
