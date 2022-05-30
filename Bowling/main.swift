@@ -6,5 +6,10 @@
 
 import Foundation
 
-print("Hello, World!")
+let controller: BowlingController = BowlingController()
 
+do {
+    try controller.a()
+} catch {
+    print("Error! \(error)")
+}
