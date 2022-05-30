@@ -16,6 +16,11 @@ struct Frame {
         self.setCurrentState()
     }
     
+    func goToNextFrame() -> Frame? {
+        guard state != .needToRoll else { return nil }
+        return Frame()
+    }
+    
     private mutating func setCurrentState() {
         self.state = pins.getState()
     }
