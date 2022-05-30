@@ -103,5 +103,5 @@ class BowlingGameTest: XCTestCase {
         XCTAssertTrue(scoreBoard.frames.value[9].counts.contains { $0.value ==  frame10Count1?.value })
         XCTAssertTrue(scoreBoard.frames.value[9].counts.contains { $0.value == frame10Count2?.value })
         XCTAssertTrue(scoreBoard.frames.value[9].counts.contains { $0.value == frame10Count3?.value })
-    }
+q    }
 }
