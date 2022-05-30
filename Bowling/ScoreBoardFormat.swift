@@ -7,37 +7,58 @@
 
 import Foundation
 
-struct BowlingFramesFormat {
+struct ScoreBoardFormat {
     private let scoreBoard: ScoreBoard
     private let playerName: PlayerName
+    
+    private let emptyFrame = "      "
+    private let delimiter = "|"
     
     var value: String {
         let bowlingFrames = scoreBoard.frames
         
-        let header = formatFrameIndex(with: bowlingFrames.value.count)
+        let header = formatFrameIndex(with: BowlingConstant.maxFrameCount)
         let name = "|  \(playerName.value) |"
         
-        let normalFrames = bowlingFrames.value
-            .filter({ ($0 is FinalFrame) == false })
-            .compactMap { $0 as? NormalFrame }
-        let finalFrames = bowlingFrames.value
-            .filter({ $0 is FinalFrame })
-            .compactMap { $0 as? FinalFrame }
+        let formattedScoreBoard = format(scoreBoard: scoreBoard)
+        let formattedName = format(name: playerName)
         
-        let normalFramesText = normalFrames.reduce("") { partialResult, frame in
-            partialResult + format(normalFrame: frame)
+        let result =  ([formattedName] + formattedScoreBoard).reduce(delimiter) { partialResult, element in
+            partialResult + element + delimiter
         }
-        
-        let finalFramesText = finalFrames.reduce("") { partialResult, frame in
-            partialResult + format(finalFrame: frame)
-        }
-        
-        return header + name + normalFramesText + finalFramesText
+        return header + result
     }
     
+    private func format(name: PlayerName) -> String {
+        let nameFormat = "  %@ "
+        return String(format: nameFormat, name.value)
+    }
+    
+    
+    private func format(scoreBoard: ScoreBoard) -> [String] {
+        return (0..<BowlingConstant.maxFrameCount).map { index -> String in
+            if index > scoreBoard.maxFrameIndex {
+                return emptyFrame
+            }
+            return format(frame: scoreBoard.frame(of: index))
+        }
+    }
+    
+    private func format(frame: Frame) -> String {
+        if let frame = frame as? FinalFrame {
+            return format(finalFrame: frame)
+        }
+        if let frame = frame as? NormalFrame {
+            return format(normalFrame: frame)
+        }
+        return ""
+    }
+    
+    
     private func format(normalFrame: NormalFrame) -> String {
-        if normalFrame.counts[0].value == BowlingConstant.pinCountOfStrike {
-            return frameText(value: "X")
+        if normalFrame.counts.count < 2 {
+            let formattedScore = format(pinCount: normalFrame.counts[0])
+            return frameText(value: formattedScore)
         }
         
         let formattedScores = format(firstScore: normalFrame.counts[0].value, secondScore: normalFrame.counts[1].value)
@@ -73,9 +94,9 @@ struct BowlingFramesFormat {
     private func formatFrameIndex(with frameTotalCount: Int) -> String {
         var result = (1...frameTotalCount).reduce("| NAME |") { partialResult, index in
             if index == BowlingConstant.maxFrameCount {
-                return partialResult + frameText(value: "\(index)")
+                return partialResult + frameText(value: "\(index)") + delimiter
             }
-            return partialResult + frameText(value: "0\(index)")
+            return partialResult + frameText(value: "0\(index)") + delimiter
             
         }
         
@@ -84,11 +105,18 @@ struct BowlingFramesFormat {
     }
     
     private func format(finalFrame: FinalFrame) -> String {
+        if finalFrame.counts.count == 1 {
+            return format(pinCount: finalFrame.counts[0])
+        }
+        
         let firstCount = finalFrame.counts[0].value
         let secondCount = finalFrame.counts[1].value
         
-        let formattedScores = format(firstScore: firstCount, secondScore: secondCount)
+        if finalFrame.counts.count == 2 {
+            return format(firstScore: firstCount, secondScore: secondCount)
+        }
         
+        var formattedScores = format(firstScore: firstCount, secondScore: secondCount)
         if firstCount == BowlingConstant.pinCountOfStrike
             || secondCount == BowlingConstant.pinCountOfStrike
             || firstCount + secondCount == BowlingConstant.pinCountOfStrike {
@@ -115,16 +143,16 @@ struct BowlingFramesFormat {
     
     func frameText(value: String) -> String {
         if value.count == 1 {
-            return "  \(value)   |"
+            return "  \(value)   "
         }
         if value.count == 2 {
-            return "  \(value)  |"
+            return "  \(value)  "
         }
         if value.count == 3 {
-            return "  \(value) |"
+            return "  \(value) "
         }
         if value.count == 5 {
-            return "\(value) |"
+            return "\(value) "
         }
         return ""
     }
