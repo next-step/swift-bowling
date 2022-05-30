@@ -13,13 +13,20 @@ struct BowlingController {
     
     func start() throws {
         let playerName = try inputView.readName()
-        outputView.printFrameGuide()
-        var frames = Array(1...10).compactMap({ _ in return Frame() })
-        for index in 0..<frames.count {
-            frames[index].roll(fallDown: 8)
-            frames[index].roll(fallDown: 2)
+        var frames: Frames = Frames()
+        outputView.printBowlingBoard(playerName: playerName, about: frames)
+        
+        var frames
+        while frames.count < 9 {
+            let fallenPin = try inputView.readPin(frameIndex: frames.count+1)
+            frame.roll(fallDown: fallenPin)
+            if let nextFrame = frame.goToNextFrame() {
+                frames.append(frame: frame)
+                frame = nextFrame
+            }
+            outputView.printBowlingBoard(playerName: playerName, about: frames)
         }
         
-        outputView.printPlayerFrame(name: playerName, frames: frames)
+        print(frames.count)
     }
 }

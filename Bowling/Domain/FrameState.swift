@@ -11,14 +11,16 @@ enum FrameState: Equatable {
     case strike
     case spare(first: Int)
     case miss(first: Int, second: Int)
-    case needToRoll
+    case needToRoll(first: Int?)
     
     var description: String {
         switch self {
         case .strike: return "X"
         case .spare(let first): return "\(getPinDescription(by: first))|/"
         case .miss(let first, let second): return "\(getPinDescription(by: first))|\(getPinDescription(by: second))"
-        default: return ""
+        case .needToRoll(let first):
+            guard let first = first else { return "" }
+            return "\(getPinDescription(by: first))"
         }
     }
     

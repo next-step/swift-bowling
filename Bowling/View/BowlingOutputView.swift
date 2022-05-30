@@ -9,7 +9,13 @@ import Foundation
 
 struct BowlingOutputView {
     
-    func printFrameGuide() {
+    func printBowlingBoard(playerName: String, about frames: Frames) {
+        printFrameGuide()
+        printPlayerFrame(name: playerName, frames: frames)
+        print()
+    }
+    
+    private func printFrameGuide() {
         let frameNumbers: Array<Int> = Array(1...10)
         print("|", terminator: "")
         printFrame(description: "NAME")
@@ -19,12 +25,17 @@ struct BowlingOutputView {
         print()
     }
     
-    func printPlayerFrame(name: String, frames: [Frame]) {
+    private func printPlayerFrame(name: String, frames: Frames) {
         print("|", terminator: "")
         printFrame(description: name)
-        frames.forEach({
-            printFrame(description: $0.state.description)
-        })
+        let emptyCount = 10 - frames.count
+        for frameIndex in 0..<frames.count {
+            let frame = frames.getFrame(by: frameIndex)
+            printFrame(description: frame.state.description)
+        }
+        for _ in 0..<emptyCount {
+            printFrame(description: "")
+        }
         print()
     }
     

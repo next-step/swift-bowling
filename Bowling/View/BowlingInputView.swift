@@ -17,6 +17,14 @@ struct BowlingInputView {
         return name
     }
     
+    func readPin(frameIndex: Int) throws -> Int {
+        let validPinRage: ClosedRange<Int> = 0...10
+        
+        guard let input = readInput(with: "\(frameIndex)프레임 투구 :") else { throw BowlingError.invalidInput }
+        guard let pin = Int(input), validPinRage.contains(pin) else { throw BowlingError.invalidInput }
+        return pin
+    }
+    
     private func readInput(with comment: String) -> String? {
         print(comment, terminator: " ")
         let input = readLine()
