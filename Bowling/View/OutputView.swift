@@ -15,4 +15,8 @@ struct OutputView {
         }
         Swift.print(error.localizedDescription)
     }
+    
+    static func print(scoreBoard: String) {
+        Swift.print(scoreBoard)
+    }
 }
