@@ -10,15 +10,15 @@ import XCTest
 
 class StubPinCountReader: PinCountReader {
     private let pinCounts: [PinCount]
-    private var index = 0
+    private var pinCountindex = 0
     
     init(pinCounts: [PinCount]) {
         self.pinCounts = pinCounts
     }
     
-    func readPinCount() -> PinCount {
-        let result = pinCounts[index]
-        index += 1
+    func readPinCount(ofFrameIndex index: Int) -> PinCount {
+        let result = pinCounts[pinCountindex]
+        pinCountindex += 1
         return result
     }
 }
@@ -74,10 +74,8 @@ class BowlingGameTest: XCTestCase {
         let scoreBoard = try bowlingGame.start()
         
         // then
-    
-        
         XCTAssertTrue(scoreBoard.frames.value[0].counts.contains { $0.value == frame1Count1?.value })
-        XCTAssertTrue(scoreBoard.frames.value[0].counts.contains { $0.value == frame1Count2?.value })
+        XCTAssertTrue(scoreBgoard.frames.value[0].counts.contains { $0.value == frame1Count2?.value })
         
         XCTAssertTrue(scoreBoard.frames.value[1].counts.contains { $0.value == frame2Count1?.value })
         XCTAssertTrue(scoreBoard.frames.value[1].counts.contains { $0.value == frame2Count2?.value })
@@ -103,5 +101,5 @@ class BowlingGameTest: XCTestCase {
         XCTAssertTrue(scoreBoard.frames.value[9].counts.contains { $0.value ==  frame10Count1?.value })
         XCTAssertTrue(scoreBoard.frames.value[9].counts.contains { $0.value == frame10Count2?.value })
         XCTAssertTrue(scoreBoard.frames.value[9].counts.contains { $0.value == frame10Count3?.value })
-q    }
+    }
 }
