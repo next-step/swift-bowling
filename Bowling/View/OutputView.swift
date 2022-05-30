@@ -18,5 +18,6 @@ struct OutputView {
     
     static func print(scoreBoard: String) {
         Swift.print(scoreBoard)
+        Swift.print("\n")
     }
 }
