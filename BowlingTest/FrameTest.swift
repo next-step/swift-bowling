@@ -53,7 +53,7 @@ class FrameTest: XCTestCase {
         sut.roll(fallDown: 8)
         sut.roll(fallDown: 1)
         
-        let expected: Pins = Pins([8, 1])
+        let expected: Pins = Pins(pins: [8, 1])
         
         XCTAssertEqual(sut.pins, expected)
     }
