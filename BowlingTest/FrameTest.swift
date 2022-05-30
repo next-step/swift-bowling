@@ -26,7 +26,7 @@ class FrameTest: XCTestCase {
         sut.roll(fallDown: 9)
         sut.roll(fallDown: 1)
         
-        let expected: FrameState = .spare
+        let expected: FrameState = .spare(first: 9)
         
         XCTAssertEqual(sut.state, expected)
     }
@@ -35,7 +35,7 @@ class FrameTest: XCTestCase {
         sut.roll(fallDown: 9)
         sut.roll(fallDown: 0)
         
-        let expected: FrameState = .miss
+        let expected: FrameState = .miss(first: 9, second: 0)
         
         XCTAssertEqual(sut.state, expected)
     }
@@ -44,9 +44,9 @@ class FrameTest: XCTestCase {
         sut.roll(fallDown: 0)
         sut.roll(fallDown: 0)
         
-        let expected: FrameState = .gutter
+        let expected = FrameState.miss(first: 0, second: 0).description
         
-        XCTAssertEqual(sut.state, expected)
+        XCTAssertEqual(sut.state.description, "-|-")
     }
     
     func test_핀을_쓰러트린_경우_프레임에_기록() {

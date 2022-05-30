@@ -22,6 +22,16 @@ struct Pins: Equatable {
         self.pins.append(pinCount)
     }
     
+    func getState() -> FrameState {
+        let sum = pins.reduce(0, +)
+        switch pins.count {
+        case 1 where sum == 10: return .strike
+        case 2 where sum == 10: return .spare(first: pins[0])
+        case 2: return .miss(first: pins[0], second: pins[1])
+        default: return .none
+        }
+    }
+    
     static func == (lhs: Pins, rhs: Pins) -> Bool {
         return lhs.pins == rhs.pins
     }
