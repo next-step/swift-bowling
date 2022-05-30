@@ -35,7 +35,7 @@ class NormalFrame: Frame, Equatable {
             }
         }
     }
-    var counts = [PinCount]()
+    private(set) var counts = [PinCount]()
     
     private let maxPinCount = 2
     private var bowlingGame: BowlingGame?
