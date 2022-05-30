@@ -15,10 +15,7 @@ struct ScoreBoardFormat {
     private let delimiter = "|"
     
     var value: String {
-        let bowlingFrames = scoreBoard.frames
-        
         let header = formatFrameIndex(with: BowlingConstant.maxFrameCount)
-        let name = "|  \(playerName.value) |"
         
         let formattedScoreBoard = format(scoreBoard: scoreBoard)
         let formattedName = format(name: playerName)
@@ -116,7 +113,7 @@ struct ScoreBoardFormat {
             return format(firstScore: firstCount, secondScore: secondCount)
         }
         
-        var formattedScores = format(firstScore: firstCount, secondScore: secondCount)
+        let formattedScores = format(firstScore: firstCount, secondScore: secondCount)
         if firstCount == BowlingConstant.pinCountOfStrike
             || secondCount == BowlingConstant.pinCountOfStrike
             || firstCount + secondCount == BowlingConstant.pinCountOfStrike {
