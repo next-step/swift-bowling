@@ -23,7 +23,7 @@ struct ScoreBoardFormat {
         let result =  ([formattedName] + formattedScoreBoard).reduce(delimiter) { partialResult, element in
             partialResult + element + delimiter
         }
-        return header + result
+        return header + "\n" + result
     }
     
     private func format(name: PlayerName) -> String {
@@ -89,16 +89,13 @@ struct ScoreBoardFormat {
     }
     
     private func formatFrameIndex(with frameTotalCount: Int) -> String {
-        var result = (1...frameTotalCount).reduce("| NAME |") { partialResult, index in
+        return (1...frameTotalCount).reduce("| NAME |") { partialResult, index in
             if index == BowlingConstant.maxFrameCount {
                 return partialResult + frameText(value: "\(index)") + delimiter
             }
             return partialResult + frameText(value: "0\(index)") + delimiter
             
         }
-        
-        result += "\n"
-        return result
     }
     
     private func format(finalFrame: FinalFrame) -> String {
@@ -108,12 +105,12 @@ struct ScoreBoardFormat {
         
         let firstCount = finalFrame.counts[0].value
         let secondCount = finalFrame.counts[1].value
+        let formattedScores = format(firstScore: firstCount, secondScore: secondCount)
         
         if finalFrame.counts.count == 2 {
-            return format(firstScore: firstCount, secondScore: secondCount)
+            return formattedScores
         }
         
-        let formattedScores = format(firstScore: firstCount, secondScore: secondCount)
         if firstCount == BowlingConstant.pinCountOfStrike
             || secondCount == BowlingConstant.pinCountOfStrike
             || firstCount + secondCount == BowlingConstant.pinCountOfStrike {
