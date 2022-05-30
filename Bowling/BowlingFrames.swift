@@ -9,12 +9,18 @@ import Foundation
 
 class BowlingFrames {
     private(set) var value = [Frame]()
+    private var lastFrame: Frame { value.last! }
+    var count: Int { return value.count }
     
     init(initialFrame: Frame) {
         value.append(initialFrame)
     }
     
-    private var lastFrame: Frame { value.last! }
+    subscript(index: Int) -> Frame { value[index] }
+    
+    func indexOf(frame: Frame) -> Int? {
+        return value.firstIndex { $0.isEqual(to: frame) }
+    }
     
     func nextFrame() -> Frame? {
         if lastFrame.needPinCount() == true {
