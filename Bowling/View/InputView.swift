@@ -12,4 +12,9 @@ struct InputView {
         print("플레이어 이름은(3 english letters)?:", terminator: " ")
         return readLine()
     }
+    
+    static func readPinCount(of frameIndex: Int) -> String? {
+        print("\(frameIndex)프레임 투구: ", terminator: "")
+        return readLine()
+    }
 }
