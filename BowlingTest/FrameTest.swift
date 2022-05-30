@@ -46,7 +46,7 @@ class FrameTest: XCTestCase {
         
         let expected = FrameState.miss(first: 0, second: 0).description
         
-        XCTAssertEqual(sut.state.description, "-|-")
+        XCTAssertEqual(sut.state.description, expected)
     }
     
     func test_핀을_쓰러트린_경우_프레임에_기록() {
