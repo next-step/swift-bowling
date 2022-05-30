@@ -57,4 +57,23 @@ class FrameTest: XCTestCase {
         
         XCTAssertEqual(sut.pins, expected)
     }
+    
+    func test_공을_한번_굴리고_스트라이크가_아닌_경우_다음_프레임은_nil() {
+        sut.roll(fallDown: 8)
+        
+        XCTAssertNil(sut.goToNextFrame())
+    }
+    
+    func test_공을_한번_굴리고_스트라이크인_경우_다음_프레임은_nil이_아님() {
+        sut.roll(fallDown: 10)
+        
+        XCTAssertNil(sut.goToNextFrame())
+    }
+    
+    func test_공을_두번굴리면_아닌_경우_다음_프레임은_nil이_아님() {
+        sut.roll(fallDown: 8)
+        sut.roll(fallDown: 1)
+        
+        XCTAssertNotNil(sut.goToNextFrame())
+    }
 }
