@@ -9,4 +9,8 @@ import Foundation
 
 struct ScoreBoard {
     let frames: BowlingFrames
+    
+    var maxFrameIndex: Int { frames.count - 1 }
+    
+    func frame(of index: Int) -> Frame { frames[index] }
 }
