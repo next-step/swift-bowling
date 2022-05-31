@@ -7,6 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DFB3DBE282AA67000150B1C /* FramesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DBD282AA67000150B1C /* FramesTest.swift */; };
+		2DFB3DC7282CDF9600150B1C /* Scorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DC6282CDF9600150B1C /* Scorable.swift */; };
+		2DFB3DC9282CDFB100150B1C /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DC8282CDFB100150B1C /* Score.swift */; };
+		2DFB3DD0282CE6B900150B1C /* Scorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DC6282CDF9600150B1C /* Scorable.swift */; };
+		2DFB3DD1282CE6BC00150B1C /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DC8282CDFB100150B1C /* Score.swift */; };
+		2DFB3DD6282CE6D900150B1C /* ScoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DD5282CE6D900150B1C /* ScoreTest.swift */; };
+		2DFB3DDA282F2D6B00150B1C /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DD9282F2D6B00150B1C /* Pins.swift */; };
+		2DFB3DDC282F2D8A00150B1C /* NormalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DDB282F2D8A00150B1C /* NormalFrame.swift */; };
+		2DFB3DDE282F2D8F00150B1C /* FinalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DDD282F2D8F00150B1C /* FinalFrame.swift */; };
+		2DFB3DE0282F33B500150B1C /* PinsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DDF282F33B500150B1C /* PinsTest.swift */; };
+		2DFB3DE3282F3ED800150B1C /* BowlingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DE2282F3ED800150B1C /* BowlingGame.swift */; };
+		2DFB3DE9282F3F1900150B1C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DE8282F3F1900150B1C /* Player.swift */; };
+		2DFB3DEB283089D300150B1C /* NormalFrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DEA283089D300150B1C /* NormalFrameTest.swift */; };
+		2DFB3DED28308D0800150B1C /* FrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DEC28308D0800150B1C /* FrameProtocol.swift */; };
+		2DFB3DF32831D25900150B1C /* Statable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF22831D25900150B1C /* Statable.swift */; };
+		2DFB3DF5283257BE00150B1C /* Running.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF4283257BE00150B1C /* Running.swift */; };
+		2DFB3DF7283257C800150B1C /* Finished.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF6283257C800150B1C /* Finished.swift */; };
+		2DFB3DF92832580600150B1C /* Ready.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF82832580600150B1C /* Ready.swift */; };
+		2DFB3E04283DED1400150B1C /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3E03283DED1400150B1C /* InputView.swift */; };
+		2DFB3E06283EE49D00150B1C /* StringUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3E05283EE49D00150B1C /* StringUtility.swift */; };
+		2DFB3E08283EE7F600150B1C /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3E07283EE7F600150B1C /* ResultView.swift */; };
+		2DFCD46D284100FD00C0D15A /* FirstBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD46C284100FD00C0D15A /* FirstBowl.swift */; };
+		2DFCD46F2841011100C0D15A /* Spare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD46E2841011100C0D15A /* Spare.swift */; };
+		2DFCD4712841011700C0D15A /* Miss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD4702841011700C0D15A /* Miss.swift */; };
+		2DFCD4732841011C00C0D15A /* Strike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD4722841011C00C0D15A /* Strike.swift */; };
+		2DFCD47728410CF600C0D15A /* StateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD47628410CF600C0D15A /* StateFactory.swift */; };
+		2DFCD47B2842210A00C0D15A /* Frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD47A2842210A00C0D15A /* Frames.swift */; };
+		2DFCD47E28452BB500C0D15A /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3E03283DED1400150B1C /* InputView.swift */; };
+		2DFCD47F28452BB700C0D15A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
+		2DFCD48028452BBB00C0D15A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3E07283EE7F600150B1C /* ResultView.swift */; };
+		2DFCD48128452BBD00C0D15A /* StringUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3E05283EE49D00150B1C /* StringUtility.swift */; };
+		2DFCD48228452BC400C0D15A /* BowlingGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DE2282F3ED800150B1C /* BowlingGame.swift */; };
+		2DFCD48328452BC900C0D15A /* NormalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DDB282F2D8A00150B1C /* NormalFrame.swift */; };
+		2DFCD48428452BCA00C0D15A /* FrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DEC28308D0800150B1C /* FrameProtocol.swift */; };
+		2DFCD48528452BCD00C0D15A /* FinalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DDD282F2D8F00150B1C /* FinalFrame.swift */; };
+		2DFCD48628452BD000C0D15A /* Frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD47A2842210A00C0D15A /* Frames.swift */; };
+		2DFCD48728452BD600C0D15A /* StateFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD47628410CF600C0D15A /* StateFactory.swift */; };
+		2DFCD48828452BD800C0D15A /* Statable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF22831D25900150B1C /* Statable.swift */; };
+		2DFCD48928452BD900C0D15A /* Running.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF4283257BE00150B1C /* Running.swift */; };
+		2DFCD48A28452BDB00C0D15A /* Finished.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF6283257C800150B1C /* Finished.swift */; };
+		2DFCD48B28452BDD00C0D15A /* Ready.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DF82832580600150B1C /* Ready.swift */; };
+		2DFCD48C28452BE100C0D15A /* FirstBowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD46C284100FD00C0D15A /* FirstBowl.swift */; };
+		2DFCD48D28452BE400C0D15A /* Spare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD46E2841011100C0D15A /* Spare.swift */; };
+		2DFCD48E28452BE700C0D15A /* Strike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD4722841011C00C0D15A /* Strike.swift */; };
+		2DFCD48F28452BEA00C0D15A /* Miss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD4702841011700C0D15A /* Miss.swift */; };
+		2DFCD49028452BEC00C0D15A /* Pins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DD9282F2D6B00150B1C /* Pins.swift */; };
+		2DFCD49128452BEF00C0D15A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFB3DE8282F3F1900150B1C /* Player.swift */; };
+		2DFCD493284620F400C0D15A /* PlayerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD492284620F400C0D15A /* PlayerTest.swift */; };
+		2DFCD495284628DB00C0D15A /* FirstBowlTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCD494284628DB00C0D15A /* FirstBowlTest.swift */; };
 		C7640416274F2F5100A223B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,11 +72,46 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2DFB3DBB282AA67000150B1C /* BowlingTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BowlingTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DFB3DBD282AA67000150B1C /* FramesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FramesTest.swift; sourceTree = "<group>"; };
+		2DFB3DC6282CDF9600150B1C /* Scorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scorable.swift; sourceTree = "<group>"; };
+		2DFB3DC8282CDFB100150B1C /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		2DFB3DD5282CE6D900150B1C /* ScoreTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTest.swift; sourceTree = "<group>"; };
+		2DFB3DD9282F2D6B00150B1C /* Pins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pins.swift; sourceTree = "<group>"; };
+		2DFB3DDB282F2D8A00150B1C /* NormalFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalFrame.swift; sourceTree = "<group>"; };
+		2DFB3DDD282F2D8F00150B1C /* FinalFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalFrame.swift; sourceTree = "<group>"; };
+		2DFB3DDF282F33B500150B1C /* PinsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsTest.swift; sourceTree = "<group>"; };
+		2DFB3DE2282F3ED800150B1C /* BowlingGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingGame.swift; sourceTree = "<group>"; };
+		2DFB3DE8282F3F1900150B1C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2DFB3DEA283089D300150B1C /* NormalFrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalFrameTest.swift; sourceTree = "<group>"; };
+		2DFB3DEC28308D0800150B1C /* FrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameProtocol.swift; sourceTree = "<group>"; };
+		2DFB3DF22831D25900150B1C /* Statable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statable.swift; sourceTree = "<group>"; };
+		2DFB3DF4283257BE00150B1C /* Running.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Running.swift; sourceTree = "<group>"; };
+		2DFB3DF6283257C800150B1C /* Finished.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finished.swift; sourceTree = "<group>"; };
+		2DFB3DF82832580600150B1C /* Ready.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ready.swift; sourceTree = "<group>"; };
+		2DFB3E03283DED1400150B1C /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		2DFB3E05283EE49D00150B1C /* StringUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtility.swift; sourceTree = "<group>"; };
+		2DFB3E07283EE7F600150B1C /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		2DFCD46C284100FD00C0D15A /* FirstBowl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBowl.swift; sourceTree = "<group>"; };
+		2DFCD46E2841011100C0D15A /* Spare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spare.swift; sourceTree = "<group>"; };
+		2DFCD4702841011700C0D15A /* Miss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miss.swift; sourceTree = "<group>"; };
+		2DFCD4722841011C00C0D15A /* Strike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strike.swift; sourceTree = "<group>"; };
+		2DFCD47628410CF600C0D15A /* StateFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateFactory.swift; sourceTree = "<group>"; };
+		2DFCD47A2842210A00C0D15A /* Frames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frames.swift; sourceTree = "<group>"; };
+		2DFCD492284620F400C0D15A /* PlayerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTest.swift; sourceTree = "<group>"; };
+		2DFCD494284628DB00C0D15A /* FirstBowlTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstBowlTest.swift; sourceTree = "<group>"; };
 		C7640412274F2F5100A223B5 /* Bowling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bowling; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7640415274F2F5100A223B5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2DFB3DB8282AA67000150B1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C764040F274F2F5100A223B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +122,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DFB3DBC282AA67000150B1C /* BowlingTest */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB3DD5282CE6D900150B1C /* ScoreTest.swift */,
+				2DFB3DDF282F33B500150B1C /* PinsTest.swift */,
+				2DFCD492284620F400C0D15A /* PlayerTest.swift */,
+				2DFB3DEA283089D300150B1C /* NormalFrameTest.swift */,
+				2DFB3DBD282AA67000150B1C /* FramesTest.swift */,
+				2DFCD494284628DB00C0D15A /* FirstBowlTest.swift */,
+			);
+			path = BowlingTest;
+			sourceTree = "<group>";
+		};
+		2DFB3DC5282CDD8700150B1C /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB3DC6282CDF9600150B1C /* Scorable.swift */,
+				2DFB3DC8282CDFB100150B1C /* Score.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
+		2DFB3DD7282E408300150B1C /* Frame */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB3DEC28308D0800150B1C /* FrameProtocol.swift */,
+				2DFB3DDB282F2D8A00150B1C /* NormalFrame.swift */,
+				2DFB3DDD282F2D8F00150B1C /* FinalFrame.swift */,
+				2DFCD47A2842210A00C0D15A /* Frames.swift */,
+			);
+			path = Frame;
+			sourceTree = "<group>";
+		};
+		2DFB3DD8282F2C6800150B1C /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB3DD9282F2D6B00150B1C /* Pins.swift */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		2DFB3DE1282F3D9900150B1C /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB3DE2282F3ED800150B1C /* BowlingGame.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		2DFB3DE4282F3EF400150B1C /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2DFB3DE8282F3F1900150B1C /* Player.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		2DFB3DF12831D0FB00150B1C /* State */ = {
+			isa = PBXGroup;
+			children = (
+				2DFCD47628410CF600C0D15A /* StateFactory.swift */,
+				2DFB3DF22831D25900150B1C /* Statable.swift */,
+				2DFB3DF4283257BE00150B1C /* Running.swift */,
+				2DFB3DF6283257C800150B1C /* Finished.swift */,
+				2DFB3DF82832580600150B1C /* Ready.swift */,
+				2DFCD46C284100FD00C0D15A /* FirstBowl.swift */,
+				2DFCD46E2841011100C0D15A /* Spare.swift */,
+				2DFCD4702841011700C0D15A /* Miss.swift */,
+				2DFCD4722841011C00C0D15A /* Strike.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
 		C7640409274F2F5100A223B5 = {
 			isa = PBXGroup;
 			children = (
 				C7640414274F2F5100A223B5 /* Bowling */,
+				2DFB3DBC282AA67000150B1C /* BowlingTest */,
 				C7640413274F2F5100A223B5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				C7640412274F2F5100A223B5 /* Bowling */,
+				2DFB3DBB282AA67000150B1C /* BowlingTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +217,15 @@
 			isa = PBXGroup;
 			children = (
 				C7640415274F2F5100A223B5 /* main.swift */,
+				2DFB3E03283DED1400150B1C /* InputView.swift */,
+				2DFB3E07283EE7F600150B1C /* ResultView.swift */,
+				2DFB3E05283EE49D00150B1C /* StringUtility.swift */,
+				2DFB3DE1282F3D9900150B1C /* Game */,
+				2DFB3DD7282E408300150B1C /* Frame */,
+				2DFB3DF12831D0FB00150B1C /* State */,
+				2DFB3DD8282F2C6800150B1C /* Pin */,
+				2DFB3DE4282F3EF400150B1C /* Player */,
+				2DFB3DC5282CDD8700150B1C /* Score */,
 			);
 			path = Bowling;
 			sourceTree = "<group>";
@@ -65,6 +233,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2DFB3DBA282AA67000150B1C /* BowlingTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DFB3DC1282AA67000150B1C /* Build configuration list for PBXNativeTarget "BowlingTest" */;
+			buildPhases = (
+				2DFB3DB7282AA67000150B1C /* Sources */,
+				2DFB3DB8282AA67000150B1C /* Frameworks */,
+				2DFB3DB9282AA67000150B1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BowlingTest;
+			productName = BowlingTest;
+			productReference = 2DFB3DBB282AA67000150B1C /* BowlingTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C7640411274F2F5100A223B5 /* Bowling */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7640419274F2F5100A223B5 /* Build configuration list for PBXNativeTarget "Bowling" */;
@@ -89,9 +274,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					2DFB3DBA282AA67000150B1C = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					C7640411274F2F5100A223B5 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -111,22 +299,121 @@
 			projectRoot = "";
 			targets = (
 				C7640411274F2F5100A223B5 /* Bowling */,
+				2DFB3DBA282AA67000150B1C /* BowlingTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		2DFB3DB9282AA67000150B1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2DFB3DB7282AA67000150B1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DFCD48528452BCD00C0D15A /* FinalFrame.swift in Sources */,
+				2DFCD48C28452BE100C0D15A /* FirstBowl.swift in Sources */,
+				2DFB3DD0282CE6B900150B1C /* Scorable.swift in Sources */,
+				2DFCD48628452BD000C0D15A /* Frames.swift in Sources */,
+				2DFCD48B28452BDD00C0D15A /* Ready.swift in Sources */,
+				2DFCD47E28452BB500C0D15A /* InputView.swift in Sources */,
+				2DFCD48028452BBB00C0D15A /* ResultView.swift in Sources */,
+				2DFCD48E28452BE700C0D15A /* Strike.swift in Sources */,
+				2DFCD48128452BBD00C0D15A /* StringUtility.swift in Sources */,
+				2DFCD48F28452BEA00C0D15A /* Miss.swift in Sources */,
+				2DFCD48728452BD600C0D15A /* StateFactory.swift in Sources */,
+				2DFCD495284628DB00C0D15A /* FirstBowlTest.swift in Sources */,
+				2DFCD48D28452BE400C0D15A /* Spare.swift in Sources */,
+				2DFCD48428452BCA00C0D15A /* FrameProtocol.swift in Sources */,
+				2DFCD48A28452BDB00C0D15A /* Finished.swift in Sources */,
+				2DFCD47F28452BB700C0D15A /* main.swift in Sources */,
+				2DFB3DD1282CE6BC00150B1C /* Score.swift in Sources */,
+				2DFB3DBE282AA67000150B1C /* FramesTest.swift in Sources */,
+				2DFCD48828452BD800C0D15A /* Statable.swift in Sources */,
+				2DFCD49128452BEF00C0D15A /* Player.swift in Sources */,
+				2DFCD493284620F400C0D15A /* PlayerTest.swift in Sources */,
+				2DFCD49028452BEC00C0D15A /* Pins.swift in Sources */,
+				2DFB3DEB283089D300150B1C /* NormalFrameTest.swift in Sources */,
+				2DFCD48928452BD900C0D15A /* Running.swift in Sources */,
+				2DFCD48328452BC900C0D15A /* NormalFrame.swift in Sources */,
+				2DFB3DE0282F33B500150B1C /* PinsTest.swift in Sources */,
+				2DFCD48228452BC400C0D15A /* BowlingGame.swift in Sources */,
+				2DFB3DD6282CE6D900150B1C /* ScoreTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C764040E274F2F5100A223B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFCD47728410CF600C0D15A /* StateFactory.swift in Sources */,
+				2DFCD4732841011C00C0D15A /* Strike.swift in Sources */,
+				2DFCD46D284100FD00C0D15A /* FirstBowl.swift in Sources */,
+				2DFB3DDE282F2D8F00150B1C /* FinalFrame.swift in Sources */,
+				2DFB3E08283EE7F600150B1C /* ResultView.swift in Sources */,
+				2DFB3DC7282CDF9600150B1C /* Scorable.swift in Sources */,
+				2DFB3DDC282F2D8A00150B1C /* NormalFrame.swift in Sources */,
+				2DFCD4712841011700C0D15A /* Miss.swift in Sources */,
+				2DFB3DF7283257C800150B1C /* Finished.swift in Sources */,
+				2DFB3DE9282F3F1900150B1C /* Player.swift in Sources */,
+				2DFCD47B2842210A00C0D15A /* Frames.swift in Sources */,
+				2DFCD46F2841011100C0D15A /* Spare.swift in Sources */,
+				2DFB3DC9282CDFB100150B1C /* Score.swift in Sources */,
+				2DFB3E04283DED1400150B1C /* InputView.swift in Sources */,
 				C7640416274F2F5100A223B5 /* main.swift in Sources */,
+				2DFB3DED28308D0800150B1C /* FrameProtocol.swift in Sources */,
+				2DFB3DF5283257BE00150B1C /* Running.swift in Sources */,
+				2DFB3DF92832580600150B1C /* Ready.swift in Sources */,
+				2DFB3DE3282F3ED800150B1C /* BowlingGame.swift in Sources */,
+				2DFB3DDA282F2D6B00150B1C /* Pins.swift in Sources */,
+				2DFB3DF32831D25900150B1C /* Statable.swift in Sources */,
+				2DFB3E06283EE49D00150B1C /* StringUtility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2DFB3DBF282AA67000150B1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8G43M5CX79;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextstep.BowlingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2DFB3DC0282AA67000150B1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8G43M5CX79;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nextstep.BowlingTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		C7640417274F2F5100A223B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -265,6 +552,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2DFB3DC1282AA67000150B1C /* Build configuration list for PBXNativeTarget "BowlingTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DFB3DBF282AA67000150B1C /* Debug */,
+				2DFB3DC0282AA67000150B1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C764040D274F2F5100A223B5 /* Build configuration list for PBXProject "Bowling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
