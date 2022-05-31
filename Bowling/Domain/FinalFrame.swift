@@ -10,6 +10,14 @@ import Foundation
 class FinalFrame: Frame {
     var bonusFrames: Frames = Frames()
     
+    override var description: String {
+        var description: String = state.description
+        for index in 0..<bonusFrames.count {
+            description.append(bonusFrames.getFrame(by: index).description)
+        }
+        return description
+    }
+    
     override func roll(fallDown pin: Int) {
         super.roll(fallDown: pin)
         switch state {
@@ -22,10 +30,14 @@ class FinalFrame: Frame {
     }
     
     func bonusRoll(fallDown pin: Int) {
-        
+        guard let bonusFrame = bonusFrames.findNeedRollFrame() as? BonusFrame else { return }
+        bonusFrame.roll(fallDown: pin)
     }
 }
 
 class BonusFrame: Frame {
-    
+    override var description: String {
+        if state == .needToRoll(first: nil) { return "" }
+        return "|\(state.description)"
+    }
 }

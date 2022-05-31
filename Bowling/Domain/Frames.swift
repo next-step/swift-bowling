@@ -39,4 +39,8 @@ struct Frames {
     func getFrame(by index: Int) -> Frame {
         return frames[index]
     }
+    
+    func findNeedRollFrame() -> Frame? {
+        return frames.filter({ !$0.isEnd }).first
+    }
 }
