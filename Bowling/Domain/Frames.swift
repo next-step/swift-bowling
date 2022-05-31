@@ -10,12 +10,17 @@ import Foundation
 struct Frames {
     private var frames: [Frame] = []
     
-    var count: Int {
-        return frames.count
+    static func generateBowlingFrames() -> Frames {
+        var frames = Frames()
+        for _ in 1...9 {
+            frames.append(frame: Frame())
+        }
+        frames.append(frame: FinalFrame())
+        
+        return frames
     }
     
-    mutating func append(frame: Frame?) {
-        guard let frame = frame else { return }
+    private mutating func append(frame: Frame) {
         frames.append(frame)
     }
     

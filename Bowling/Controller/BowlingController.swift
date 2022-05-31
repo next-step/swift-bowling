@@ -13,23 +13,20 @@ struct BowlingController {
     
     func start() throws {
         let playerName = try inputView.readName()
-        var frames: Frames = Frames()
+        let frames: Frames = Frames.generateBowlingFrames()
         outputView.printBowlingBoard(playerName: playerName, about: frames)
     
-        frames.append(frame: Frame())
-        
-        while frames.count < 9 {
-            let fallenPin = try inputView.readPin(frameIndex: frames.count)
-            let frame = frames.getFrame(by: frames.count-1)
-            frame.roll(fallDown: fallenPin)
-            
-            let nextFrame = frame.goToNextFrame()
-            frames.append(frame: nextFrame)
-            
-            outputView.printBowlingBoard(playerName: playerName, about: frames)
+        for index in 1...9 {
+            try playFrame(name: playerName, current: index, frames: frames)
         }
-        
-        
-        print(frames.count)
+    }
+    
+    private func playFrame(name: String, current index: Int, frames: Frames) throws {
+        let frame = frames.getFrame(by: index - 1)
+        while !frame.isEnd {
+            let fallenPin = try inputView.readPin(frameIndex: index)
+            frame.roll(fallDown: fallenPin)
+            outputView.printBowlingBoard(playerName: name, about: frames)
+        }
     }
 }

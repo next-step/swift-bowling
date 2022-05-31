@@ -22,6 +22,7 @@
 		A5C55BA4284526A000FBEC4D /* Frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA3284526A000FBEC4D /* Frames.swift */; };
 		A5C55BA5284526A000FBEC4D /* Frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA3284526A000FBEC4D /* Frames.swift */; };
 		A5C55BA728452F8E00FBEC4D /* FinalFrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA628452F8E00FBEC4D /* FinalFrameTest.swift */; };
+		A5C55BA92845309900FBEC4D /* FinalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA82845309900FBEC4D /* FinalFrame.swift */; };
 		C7640416274F2F5100A223B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		A5C55BA12844FC0D00FBEC4D /* BowlingOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BowlingOutputView.swift; sourceTree = "<group>"; };
 		A5C55BA3284526A000FBEC4D /* Frames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frames.swift; sourceTree = "<group>"; };
 		A5C55BA628452F8E00FBEC4D /* FinalFrameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalFrameTest.swift; sourceTree = "<group>"; };
+		A5C55BA82845309900FBEC4D /* FinalFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalFrame.swift; sourceTree = "<group>"; };
 		C7640412274F2F5100A223B5 /* Bowling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bowling; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7640415274F2F5100A223B5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 				A5C55B7D28429D0F00FBEC4D /* FrameState.swift */,
 				A5C55B9E2844A14D00FBEC4D /* Pins.swift */,
 				A5C55BA3284526A000FBEC4D /* Frames.swift */,
+				A5C55BA82845309900FBEC4D /* FinalFrame.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				C7640416274F2F5100A223B5 /* main.swift in Sources */,
 				A5C55B9628449AB900FBEC4D /* BowlingInputView.swift in Sources */,
 				A5C55B9F2844A14D00FBEC4D /* Pins.swift in Sources */,
+				A5C55BA92845309900FBEC4D /* FinalFrame.swift in Sources */,
 				A5C55BA4284526A000FBEC4D /* Frames.swift in Sources */,
 				A5C55B7E28429D0F00FBEC4D /* FrameState.swift in Sources */,
 				A5C55B7B28429CBB00FBEC4D /* Frame.swift in Sources */,

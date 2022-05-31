@@ -11,14 +11,18 @@ class Frame {
     var state: FrameState = .needToRoll(first: nil)
     var pins: Pins = Pins()
     
+    var isEnd: Bool {
+        if case .needToRoll(_) = state { return false }
+        return true
+    }
+    
+    var description: String {
+        return state.description
+    }
+    
     func roll(fallDown pin: Int) {
         self.pins.fallDown(pinCount: pin)
         self.setCurrentState()
-    }
-    
-    func goToNextFrame() -> Frame? {
-        if case .needToRoll(_) = state { return nil }
-        return Frame()
     }
     
     private func setCurrentState() {

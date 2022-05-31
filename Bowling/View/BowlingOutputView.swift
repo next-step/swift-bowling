@@ -28,13 +28,9 @@ struct BowlingOutputView {
     private func printPlayerFrame(name: String, frames: Frames) {
         print("|", terminator: "")
         printFrame(description: name)
-        let emptyCount = 10 - frames.count
-        for frameIndex in 0..<frames.count {
+        for frameIndex in 0..<10 {
             let frame = frames.getFrame(by: frameIndex)
-            printFrame(description: frame.state.description)
-        }
-        for _ in 0..<emptyCount {
-            printFrame(description: "")
+            printFrame(description: frame.description)
         }
         print()
     }
