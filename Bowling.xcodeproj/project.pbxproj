@@ -23,6 +23,7 @@
 		A5C55BA5284526A000FBEC4D /* Frames.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA3284526A000FBEC4D /* Frames.swift */; };
 		A5C55BA728452F8E00FBEC4D /* FinalFrameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA628452F8E00FBEC4D /* FinalFrameTest.swift */; };
 		A5C55BA92845309900FBEC4D /* FinalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA82845309900FBEC4D /* FinalFrame.swift */; };
+		A5C55BAC2845E19700FBEC4D /* FinalFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C55BA82845309900FBEC4D /* FinalFrame.swift */; };
 		C7640416274F2F5100A223B5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7640415274F2F5100A223B5 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -230,6 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C55BAC2845E19700FBEC4D /* FinalFrame.swift in Sources */,
 				A5C55B7628429BB000FBEC4D /* FrameTest.swift in Sources */,
 				A5C55B7F28429D0F00FBEC4D /* FrameState.swift in Sources */,
 				A5C55BA728452F8E00FBEC4D /* FinalFrameTest.swift in Sources */,
